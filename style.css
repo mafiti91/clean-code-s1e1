@@ -73,6 +73,9 @@ button{
   text-transform: uppercase;
 }
 .task_input {
+  display: inline-block;
+  flex-grow: 1;
+  width: 226px;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -89,11 +92,11 @@ button{
 }
 
 /* New Task */
-.add_task_label {
+.add-task_label {
   display: block;
   margin: 0 0 20px;
 }
-#new_task {
+.add-task_input {
   width: 318px;
 }
 
@@ -117,7 +120,9 @@ button{
   font-size: 18px;
   width: 226px;
 }
-
+.task_content .task_input{
+    display: none;
+}
 .delete-btn_img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -128,21 +133,18 @@ button{
 }
 
 /* Completed */
-#completed_item .task_label {
+.completed_item .task_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.editMode_task .task_input {
-  display: none;
-}
 
-.editMode_task .task {
+.task_content_active .task_input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode_task .task_label {
+.task_content_active .task_label {
   display: none;
 }

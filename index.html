@@ -17,18 +17,18 @@
       </a>
     </header>
     <main class="main-todo">
-      <section id="add-task">
+      <section class="add-task">
         <label class="add-task_label" for="new-task">Add Item</label>
         <p class="add-task_form">
-          <input id="new-task" class="task_input" type="text">
+          <input id="new-task" class="task_input add-task_input" type="text">
           <button class="add-task_button btn">Add</button>
         </p>
       </section>
-      <section>
+      <section class="incomplete">
         <h3 class="name-block">Todo</h3>
-        <ul id="incomplete">
+        <ul class="incomplete_item">
           <li class="task_content">
-            <input type="checkbox">
+            <input type="checkbox" class="task_checkbox">
             <label class="task_label">Pay Bills</label>
             <input type="text" class="task_input">
             <button class="edit-task_button btn">Edit</button>
@@ -36,10 +36,10 @@
               <img class="delete-btn_img" src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="task_content editMode_task">
-            <input type="checkbox">
+          <li class="task_content task_content_active">
+            <input type="checkbox" class="task_checkbox">
             <label class="task_label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
+            <input type="text" value="Go Shopping" class="task_input">
             <button class="edit-task_button btn">Save</button>
             <button class="delete-task_button btn">
               <img class="delete-btn_img" src="./remove.svg" alt="">
@@ -47,13 +47,13 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="completed">
         <h3 class="name-block">Completed</h3>
-        <ul id="completed">
-          <li>
-            <input type="checkbox" checked>
+        <ul class="completed_item">
+          <li class="task_content">
+            <input type="checkbox" class="task_checkbox" checked>
             <label class="task_label">See the Doctor</label>
-            <input type="text" class="task">
+            <input type="text" class="task_input">
             <button class="edit-task_button btn">Edit</button>
             <button class="delete-task_button btn">
               <img class="delete-btn_img" src="./remove.svg" alt="">
