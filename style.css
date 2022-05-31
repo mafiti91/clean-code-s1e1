@@ -46,7 +46,7 @@ h3 {
   list-style: none;
 }
 input,
-button{
+button {
   outline: none;
 }
 .btn {
@@ -61,6 +61,7 @@ button{
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .name-block,
 .add-task_label {
@@ -105,12 +106,10 @@ button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .task_checkbox {
   margin: 0 10px;
 }
@@ -139,12 +138,10 @@ button{
 }
 
 /* Edit Task */
-
 .task_content_active .task_input {
   display: inline-block;
   width: 224px;
 }
-
 .task_content_active .task_label {
   display: none;
 }
