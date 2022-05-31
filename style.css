@@ -98,7 +98,7 @@ button{
 }
 
 /* Task list */
-li {
+.task_content {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -107,22 +107,17 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
 
-li > input[type="checkbox"] {
+.task_checkbox {
   margin: 0 10px;
 }
-li > label {
+.task_content .task_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
-  width: 226px;
-}
+
 .delete-btn_img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -133,21 +128,21 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed_item .task_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.editMode_task .task_input {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.editMode_task .task {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.editMode_task .task_label {
   display: none;
 }
